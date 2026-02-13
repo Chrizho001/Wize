@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { LuGrape } from "react-icons/lu";
 import { FaWineBottle } from "react-icons/fa6";
 
-const API_URL = "http://localhost:8000/api/bookings/create/";
+const API_URL = "https://wize-api.onrender.com/api/bookings/create/";
 
 const Form = ({ closeForm }) => {
     const [form, setForm] = useState({
@@ -76,7 +76,7 @@ const Form = ({ closeForm }) => {
                 setTimeout(() => {
                     setMessage(null);
                     closeForm();
-                }, 1000);
+                }, 1500);
             } else {
                 const errorText =
                     data.error ||
